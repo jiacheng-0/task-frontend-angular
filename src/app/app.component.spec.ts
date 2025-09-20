@@ -1,10 +1,21 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { TaskService } from './services/task.service';
+import { of } from 'rxjs';
 
 describe('AppComponent', () => {
+
+  let mockTaskService: jasmine.SpyObj<TaskService>;
+  
   beforeEach(async () => {
+    mockTaskService = jasmine.createSpyObj('TaskService', ['getTasks']);
+    mockTaskService.getTasks.and.returnValue(of([]));
+    
     await TestBed.configureTestingModule({
       imports: [AppComponent],
+      providers: [
+        { provide: TaskService, useValue: mockTaskService }
+      ]
     }).compileComponents();
   });
 
@@ -24,6 +35,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, task-frontend');
+    expect(compiled.querySelector('h2')?.textContent).toContain('Task Manager');
   });
 });

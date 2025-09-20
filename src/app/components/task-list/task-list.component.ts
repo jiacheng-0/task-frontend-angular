@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService, Task } from '../../services/task.service';
+import { FormsModule } from '@angular/forms'; // ✅ import FormsModule
+import { CommonModule } from '@angular/common'; // ✅ import CommonModule
 
 @Component({
   selector: 'app-task-list',
+  standalone: true, // make sure it's standalone
+  imports: [FormsModule, CommonModule], // ✅ add Module here
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css']
 })

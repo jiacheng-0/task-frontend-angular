@@ -60,6 +60,8 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ```bash
 ng test
 ```
+Press Ctrl + C in your terminal to stop it.
+
 
 To run the tests only once (without watch mode), use:
 
@@ -69,6 +71,7 @@ ng test --watch=false
 
 To run tests for a specific file, use:
 ```bash 
+ng test --watch=false --include src/app/app.component.spec.ts
 ng test --watch=false --include src/app/components/task-list/task-list.component.spec.ts
 ```
 

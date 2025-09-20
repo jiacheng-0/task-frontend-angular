@@ -6,13 +6,13 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 If you want, the next steps could be:
 
-- Adding update task functionality (PUT) fully in the UI.
+- Adding update task functionality (PUT) fully in the UI. ✅
 
 - Adding better UI/UX, e.g., task completion animations or notifications.
 
 - Persisting data in a real database instead of H2.
 
-- Adding unit tests for backend and frontend.
+- Adding unit tests for backend and frontend. ✅
 
 ## Development server
 

@@ -3,7 +3,7 @@ import { TaskListComponent } from './task-list.component';
 import { TaskService, Task } from '../../services/task.service';
 import { of } from 'rxjs';
 import { FormsModule } from '@angular/forms';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 
 describe('TaskListComponent', () => {
   let component: TaskListComponent;
@@ -23,9 +23,11 @@ describe('TaskListComponent', () => {
       imports: [
         TaskListComponent, // standalone component
         FormsModule,
-        HttpClientTestingModule, // 👈 provides HttpClient for DI
       ],
-      providers: [{ provide: TaskService, useValue: mockTaskService }],
+      providers: [
+        provideHttpClientTesting(), // 👈 provides HttpClientTestingModule
+        { provide: TaskService, useValue: mockTaskService },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(TaskListComponent);

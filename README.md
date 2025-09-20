@@ -38,6 +38,11 @@ For a complete list of available schematics (such as `components`, `directives`,
 ng generate --help
 ```
 
+## GPT helpers
+
+- main https://chatgpt.com/c/68ce4b35-8d00-832a-9c09-20e1508e146a
+- Mock service in testing https://chatgpt.com/c/68ce8667-98b0-8327-9ab8-c736131749c1
+
 ## Building
 
 To build the project run:
@@ -60,6 +65,11 @@ To run the tests only once (without watch mode), use:
 
 ```bash
 ng test --watch=false
+```
+
+To run tests for a specific file, use:
+```bash 
+ng test --watch=false --include src/app/components/task-list/task-list.component.spec.ts
 ```
 
 ## Running end-to-end tests

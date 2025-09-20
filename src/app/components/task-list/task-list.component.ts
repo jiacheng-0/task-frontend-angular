@@ -41,7 +41,6 @@ export class TaskListComponent implements OnInit {
   }
 
   toggleCompleted(task: Task) {
-    task.completed = !task.completed;
     this.taskService.updateTask(task).subscribe();
   }
 }

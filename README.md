@@ -44,6 +44,12 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ng test
 ```
 
+To run the tests only once (without watch mode), use:
+
+```bash
+ng test --watch=false
+```
+
 ## Running end-to-end tests
 
 For end-to-end (e2e) testing, run:

@@ -1,0 +1,14 @@
+.task-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.add-task {
+  margin-bottom: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}

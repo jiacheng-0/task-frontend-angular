@@ -2,6 +2,18 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.9.
 
+## Next steps 
+
+If you want, the next steps could be:
+
+- Adding update task functionality (PUT) fully in the UI.
+
+- Adding better UI/UX, e.g., task completion animations or notifications.
+
+- Persisting data in a real database instead of H2.
+
+- Adding unit tests for backend and frontend.
+
 ## Development server
 
 To start a local development server, run:

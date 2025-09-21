@@ -2,6 +2,18 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.9.
 
+## Images
+
+![image-20250921194637753](README.assets/image-20250921194637753.png)
+
+---
+
+![image-20250921194713517](README.assets/image-20250921194713517.png)
+
+---
+
+
+
 ## Next steps 
 
 If you want, the next steps could be:
